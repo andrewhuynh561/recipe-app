@@ -27,7 +27,7 @@ function display(){
                 
             });
         }else{
-            alert("Sorry we are loading....");
+            alert("Sorry we are loading....")
         }
         recipeListEl.innerHTML=html;
         console.log(data.recipes);

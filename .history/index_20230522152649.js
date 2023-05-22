@@ -17,17 +17,14 @@ function display(){
                 />
                 <h2>${recipe.title}</h2>
                 <p>
-                <strong>Ingredients:</strong> ${recipe.extendedIngredients
-                    .map((ingredient) => ingredient.original)
-                    .join(", ")}
-
+                <strong>Ingredients:</strong> ${recipe.extendedIngredients.forEach(ingredient =>{
+                    ingredient.original
+                })}
                 </p>
-                <a href="${recipe.sourceUrl}">View Recipe</a>
+                <a href="#">View Recipe</a>
              </li>`
                 
             });
-        }else{
-            alert("Sorry we are loading....");
         }
         recipeListEl.innerHTML=html;
         console.log(data.recipes);

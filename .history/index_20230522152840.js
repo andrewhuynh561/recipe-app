@@ -22,12 +22,10 @@ function display(){
                     .join(", ")}
 
                 </p>
-                <a href="${recipe.sourceUrl}">View Recipe</a>
+                <a href="#">View Recipe</a>
              </li>`
                 
             });
-        }else{
-            alert("Sorry we are loading....");
         }
         recipeListEl.innerHTML=html;
         console.log(data.recipes);
